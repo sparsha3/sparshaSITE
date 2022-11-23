@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #fff 
+    url(Loading.gif) no-repeat center;
+    z-index: 99;
+}
+
+@media(max-width: 1800px){
+    #loading{
+        background: #fff 
+        url(Loading.gif) repeat center;
+    }
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.771)), url(rock.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: cemter;
+}
+
+nav img {
+    width: 115px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+.textbox {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textbox h1 {
+    font-size: 62px;
+}
+
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: white;
+}
+
+.herobtn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.herobtn:hover {
+    color: black;
+    border: 1px solid white;
+    background: white;
+    transition: 0.25s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .textbox h1 {
+        font-size: 20px;
+
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: black;
+        opacity: 0.85;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav img {
+        margin: 10%;
+        padding: -10%;
+        width: 75px;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px
+    }
+}
+
+
+/* --------About-------- */
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px ;
+}
+
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(About\ me1.gif);
+    background-position: center;
+    background-size: cover;    
+    text-align: center;
+    color: white;
+}
+
+
+h1{
+    font-size: 62px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hobbies{
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.hobbies:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.459);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* -----Designs--------- */
+
+.sub-header1{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.038),rgba(4, 9, 30, 0.022)),url(My\ Designs\ LFG.gif);
+    background-position: center;
+    background-size: 1150px;
+    text-align: center;
+    color: white;
+}
+
+
+.designs{
+
+width: 85%;
+margin: auto;
+text-align: center;
+padding-top: 30px;
+}
+
+.mydesign{
+    
+    flex-basis: 31%;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.mydesign img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.15s;
+}
+.layer:hover{
+   background-color: rgba(0, 0, 0, 0.662);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transform: 0.8s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* -------hobbies----- */
+
+.dream{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.what{
+    flex-basis: 30%;
+    border-radius: 50px;
+margin-bottom: 5%;
+text-align: left;
+}
+
+.what img{
+    width: 100%;
+    border-radius: 10px;
+}
+.what p{
+    padding: 0;
+}
+
+.dream h3{
+    margin-top: 16px ;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* --------Call to action------- */
+
+.cta{
+    margin: 100px auto;
+    width: 90%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.788),rgba(17, 12, 12, 0.822)),url(GIT.jpg);
+    background-position: right;
+    background-size:cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: white;
+    text-shadow: 2px black;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 26px;
+    }
+}
+
+
+/* -----footer------- */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/* -----icons---- */
+.icons img{
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/* -------About us Page------ */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.801),rgba(4, 9, 30, 0.781)),url(Tunnel.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* -----about us---- */
+.aboutus {
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px ;
+}
+
+.changebtn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.changebtn:hover{
+    color: white;
+    border: 1px solid white;
+    background: black;
+    transition: 0.25s;
+}
+
+/* ----location---- */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.contact-col div .fa{
+    font-size: 28px;
+   color: black;
+   margin: 10px;
+   margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 500px
+    ;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid black;
+box-sizing: border-box;
+}
+
+
+/* -----contact us------ */
+.sub-header3{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(Contact\ me.gif);
+    background-position: center;
+    background-size: 1050px;    
+    text-align: center;
+    color: white;
+}

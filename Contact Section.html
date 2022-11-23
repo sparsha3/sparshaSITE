@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width" initial-scale="1.0" />
+    <title>Sparsha Lamichhane - Official site</title>
+    <link rel="stylesheet" href="website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+      integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="sub-header3">
+      <nav>
+        <a href="index.html"><img src="logonobg.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About Section.html">ABOUT</a></li>
+            <li><a href="Contact Section.html">CONTACT</a></li>
+            <li><a href="Designs.html">DESIGNS</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <!-- ----contact me---- -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452506.4396505533!2d84.07673131173841!3d27.618118603959246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994439ad1ca5a8d%3A0x6c5e40f75e1f474f!2sChitawan!5e0!3m2!1sen!2snp!4v1668858050175!5m2!1sen!2snp"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Bharatpur-11,Bhojard</h5>
+              <p>Chitwan,Bagmati Province, NP</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+977-9845048913</h5>
+              <p>Monday to Saturday, 10AM to 5PM</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>imailsparsha@gmail.com</h5>
+              <p>Email me your Query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email Adress"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button class="herobtn changebtn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---foooter---- -->
+    <section class="footer">
+      <h4>Connect with me</h4>
+      <p>
+        “Engage, Enlighten, Encourage and especially just be yourself!<br />
+        Social media is a community effort, everyone is an asset.”
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/lamichhane.sparsha" target="_blank"
+          ><img src="fb.png" width="60px"
+        /></a>
+
+        <a href="https://www.instagram.com/sparshalamichhane_/" target="_blank"
+          ><img src="ig.webp" width="60px"
+        /></a>
+
+        <a href="https://twitter.com/sparsha_lc" target="_blank"
+          ><img src="t.png" width="60px"
+        /></a>
+      </div>
+    </section>
+
+    <!-- ---JS for Toggle menu-- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

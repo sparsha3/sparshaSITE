@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width" initial-scale="1.0" />
+    <title>Sparsha Lamichhane - Official site</title>
+    <link rel="stylesheet" href="website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+      integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="sub-header2">
+      <nav>
+        <a href="index.html"><img src="logonobg.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About Section.html">ABOUT</a></li>
+            <li><a href="Contact Section.html">CONTACT</a></li>
+            <li><a href="Designs.html">DESIGNS</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!-- <h1>About me</h1> -->
+    </section>
+
+    <!-- ----about us ----- -->
+    <section class="aboutus">
+      <div class="row">
+        <div class="about-col">
+          <h1>I'm Sparsha Lamichhane</h1>
+          <p>
+            I am a person who is positive about every aspect of life. There are
+            many things I like to do, to see, and to experience. I like to read,
+            I like to write; I like to think, I like to dream; I like to talk, I
+            like to listen. I like to see the sunrise in the morning, I like to
+            see the moonlight at night; I like to feel the music flowing on my
+            face, I like to lookat the clouds in the sky with a blank mind, I
+            like to do thought experiment when I cannot sleep in the middle of
+            the night.
+          </p>
+          <a href="index.html" class="changebtn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="AM.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ---foooter---- -->
+    <section class="footer">
+      <h4>Connect with me</h4>
+      <p>
+        “Engage, Enlighten, Encourage and especially just be yourself!<br />
+        Social media is a community effort, everyone is an asset.”
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/lamichhane.sparsha" target="_blank"
+          ><img src="fb.png" width="60px"
+        /></a>
+
+        <a href="https://www.instagram.com/sparshalamichhane_/" target="_blank"
+          ><img src="ig.webp" width="60px"
+        /></a>
+
+        <a href="https://twitter.com/sparsha_lc" target="_blank"
+          ><img src="t.png" width="60px"
+        /></a>
+      </div>
+    </section>
+
+    <!-- ---JS for Toggle menu-- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
