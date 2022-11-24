@@ -61,7 +61,7 @@
           <div>
             <i class="fa fa-phone"></i>
             <span>
-              <h5>+977-9845048913</h5>
+              <h5>+977-9844412211</h5>
               <p>Monday to Saturday, 10AM to 5PM</p>
             </span>
           </div>
@@ -75,28 +75,28 @@
           </div>
         </div>
         <div class="contact-col">
-          <form action="form-handler.php" method="post">
+          <form onsubmit="sendEmail(); reset(); return false;">
             <input
               type="text"
-              name="name"
+              id="name"
               placeholder="Enter your name"
               required
             />
             <input
               type="email"
-              name="email"
+              id="email"
               placeholder="Enter your Email Adress"
               required
             />
             <input
               type="text"
-              name="subject"
+              id="subject"
               placeholder="Enter your subject"
               required
             />
             <textarea
               rows="8"
-              name="message"
+              id="message"
               placeholder="Message"
               required
             ></textarea>
@@ -129,14 +129,29 @@
     </section>
 
     <!-- ---JS for Toggle menu-- -->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
 
-      function hideMenu() {
-        navLinks.style.right = "-200px";
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "abdsparsha@gmail.com",
+          Password: "snehasparsha9844412211",
+          To: "imailsparsha@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "Contact Form Enquiry",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "<br> Email: " +
+            document.getElementById("email").value +
+            "<br> Phone no: " +
+            document.getElementById("phone").value +
+            "<br> Message " +
+            document.getElementById("message").value,
+        }).then((message) =>
+          alert("Thankyou For Contacting Us! <br>Message Send Successfully")
+        );
       }
     </script>
   </body>
