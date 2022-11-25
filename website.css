@@ -168,7 +168,7 @@ nav .fa {
 .sub-header2 {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(About\ me1.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.737), rgba(0, 0, 0, 0.704)), url(About\ me1.gif);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -218,11 +218,19 @@ h3 {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.459);
 }
 
-@media(max-width: 1150px) {
+@media(max-width: 700px) {
     .row {
         flex-direction: column;
     }
 }
+
+@media(max-width: 1000px) {
+    .row1 {
+        flex-direction: column;
+    }
+}
+
+
 
 /* -----Designs--------- */
 
@@ -300,7 +308,7 @@ h3 {
 /* -------hobbies----- */
 
 .dream {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -323,7 +331,7 @@ h3 {
 }
 
 .dream h3 {
-    margin-top: 16px;
+    margin-top: 15px;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -400,13 +408,15 @@ h3 {
 }
 
 .about-col {
-    flex-basis: 48%;
-    padding: 30px 2px;
+    flex-basis: 50%;
+    padding: 30px 5px;
+    
 }
 
 .about-col img {
-    width: 100%;
-    border-radius: 50px;
+    width: 90%;
+    border-radius: 100px;
+    flex-wrap: nowrap;
 }
 
 .about-col h1 {
@@ -421,9 +431,9 @@ h3 {
     display: inline-block;
     text-decoration: none;
     color: black;
-    border: 2px solid black;
-    padding: 12px 34px;
-    font-size: 13px;
+    border: 3px solid black;
+    padding: 12px 19px;
+    font-size: 15px;
     background: transparent;
     position: relative;
     cursor: pointer;
