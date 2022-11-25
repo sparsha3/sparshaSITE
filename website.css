@@ -538,3 +538,9 @@ transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
 .slider span:hover img{
     transform: translateY(-50px) scale(1.2);
 }
+
+@media(max-width: 1000px) {
+    .row1 {
+        flex-direction: column;
+    }
+}
