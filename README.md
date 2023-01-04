@@ -1,1 +1,1 @@
-# Visit sparshalamichhane.com.np
+sparshalamichhane.com.np
